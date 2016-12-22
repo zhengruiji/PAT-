@@ -1,7 +1,7 @@
-//×Ü½á£º
-//ÌâÄ¿¸ø¶¨ÁË×ÔÈ»ÊıµÄ·¶Î§ÏÔÈ»long longµÄÊı¾İÀàĞÍ¶¼²»ÄÜÂú×ã
-//scan()¸ñÊ½»¯ÊäÈë getchar()Ö»ÄÜµ¥¸ö¶ÁÈ¡×Ö·û gets()ÄÜ¹»¶ÁÈ¡×Ö·ûµ½Êı×é£¬ÊµÔò·µ»ØµÄÊÇÖ¸Õë
-//Êı×ÖºÍºº×ÖÖ®¼ä´æÔÚ×ÅÁªÏµ£¬¿ÉÒÔÉèÖÃÒ»¸ö´æ·Åºº×ÖµÄÊı×é£¬½«Òª×ª»»µÄÊı×Ö×÷Îªºº×ÖÊı×éµÄÏÂ±ê  
+//æ€»ç»“ï¼š
+//é¢˜ç›®ç»™å®šäº†è‡ªç„¶æ•°çš„èŒƒå›´æ˜¾ç„¶long longçš„æ•°æ®ç±»å‹éƒ½ä¸èƒ½æ»¡è¶³
+//scanf()æ ¼å¼åŒ–è¾“å…¥ getchar()åªèƒ½å•ä¸ªè¯»å–å­—ç¬¦ gets()èƒ½å¤Ÿè¯»å–å­—ç¬¦åˆ°æ•°ç»„ï¼Œå®åˆ™è¿”å›çš„æ˜¯æŒ‡é’ˆ
+//æ•°å­—å’Œæ±‰å­—ä¹‹é—´å­˜åœ¨ç€è”ç³»ï¼Œå¯ä»¥è®¾ç½®ä¸€ä¸ªå­˜æ”¾æ±‰å­—çš„æ•°ç»„ï¼Œå°†è¦è½¬æ¢çš„æ•°å­—ä½œä¸ºæ±‰å­—æ•°ç»„çš„ä¸‹æ ‡  
 #include<stdio.h>
 #include<math.h>
 int calculate(char nature[],int location);
@@ -13,14 +13,14 @@ int main()
 	char nature[110];
 	int location=0;
 	int sum=0;
-	int amount=0;//Î»Êı-1 
+	int amount=0;//ä½æ•°-1 
 	char temp; 
-	while((temp=getchar())!='\n')//¿ÉÒÔÓÃgets()º¯Êı´úÌæ·µ»ØÖµÎªÖ¸Õë½»¸ønatureÊı×é 
+	while((temp=getchar())!='\n')//å¯ä»¥ç”¨gets()å‡½æ•°ä»£æ›¿è¿”å›å€¼ä¸ºæŒ‡é’ˆäº¤ç»™natureæ•°ç»„ 
 	{
 		nature[location]=temp;
 		location++;
 	}
-	location-=1;//×Ö·û´®³¤¶ÈµÄ¼ÆËã¿ÉÒÔ½»¸østrlen(const char*str),³¤¶È²»°üÀ¨×Ö·û´®Ä©Î²µÄ0 
+	location-=1;//å­—ç¬¦ä¸²é•¿åº¦çš„è®¡ç®—å¯ä»¥äº¤ç»™strlen(const char*str),é•¿åº¦ä¸åŒ…æ‹¬å­—ç¬¦ä¸²æœ«å°¾çš„0 
 	sum=calculate(nature,location);
 	amount=calculateAmount(sum);
 	write(sum,amount-1);
@@ -71,7 +71,7 @@ void write(int sum,int amount)
 		case 9:printf("jiu");break;
 	}
 }
-int calculateAmount(int sum)//¼ÆËãsumµÄÎ»Êı 
+int calculateAmount(int sum)//è®¡ç®—sumçš„ä½æ•° 
 {
 	int amount=0;
 	while(sum/=10!=0)

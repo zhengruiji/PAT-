@@ -4,9 +4,9 @@ int main()
 {
 	int num;
 	scanf("%d",&num);
-	int i=num/100;//百位 
-	int j=num%100/10;//十位 
-	int k=num%10;//个位
+	int i=num/100;//掳脵脦禄 
+	int j=num%100/10;//脢庐脦禄 
+	int k=num%10;//赂枚脦禄
 	for(int t=1;t<=i;t++)
 	{
 		printf("B");
@@ -18,5 +18,6 @@ int main()
 	for(int t=1;t<=k;t++)
 	{
 		printf("%d",t);
-	} 
+	}
+	return 0;
 }
